@@ -1,0 +1,31 @@
+---
+abstract: 'Provides the syntax to restrict/control visibility of your methods'
+author:
+  - 'franck cuny <franck@lumberjaph.net>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.95'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: MooseX-Privacy
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Filter::Util::Call: 0
+  Moose: 0
+  MooseX::Role::Parameterized: 0
+  MooseX::Types: 0
+  Scalar::Util: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/franckcuny/moosex-privacy.git
+version: 0.01
