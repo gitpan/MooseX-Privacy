@@ -1,4 +1,9 @@
 package MooseX::Privacy::Meta::Class::Role;
+BEGIN {
+  $MooseX::Privacy::Meta::Class::Role::VERSION = '0.02';
+}
+
+# ABSTRACT: Private and Protected parameterized roles
 
 use MooseX::Role::Parameterized;
 use Scalar::Util;
@@ -14,14 +19,16 @@ role {
     my $p = shift;
 
     my $name             = $p->name;
-    my $local_methods    = "local_" . $name . "_methods";
-    my $local_attributes = "local_" . $name . "_attributes";
-    my $push_method      = "_push_" . $name . "_method";
-    my $push_attribute   = "_push_" . $name . "_attribute";
-    my $count_methods    = "_count_" . $name . "_methods";
-    my $count_attributes = "_count_" . $name . "_attributes";
-
-    my $meta_method = "add_" . $name . "_method";
+    my $local_methods        = "local_" . $name . "_methods";
+    my $local_attributes     = "local_" . $name . "_attributes";
+    my $push_method          = "_push_" . $name . "_method";
+    my $push_attribute       = "_push_" . $name . "_attribute";
+    my $count_methods        = "_count_" . $name . "_methods";
+    my $count_attributes     = "_count_" . $name . "_attributes";
+    my $get_method           = 'get_' . $name . '_method';
+    my $get_all_mehods       = 'get_all_' . $name . '_methods';
+    my $get_all_methods_name = 'get_all_' . $name . '_method_names';
+    my $meta_method          = "add_" . $name . "_method";
 
     has $local_methods => (
         traits     => ['Array'],
@@ -64,23 +71,29 @@ role {
 };
 
 1;
+
+
 __END__
+=pod
 
 =head1 NAME
 
 MooseX::Privacy::Meta::Class::Role - Private and Protected parameterized roles
 
-=head1 SYNOPSIS
+=head1 VERSION
+
+version 0.02
 
 =head1 AUTHOR
 
-franck cuny E<lt>franck@lumberjaph.netE<gt>
+  franck cuny <franck@lumberjaph.net>
 
-=head1 SEE ALSO
+=head1 COPYRIGHT AND LICENSE
 
-=head1 LICENSE
+This software is copyright (c) 2010 by franck cuny.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+

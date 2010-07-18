@@ -1,4 +1,7 @@
 package MooseX::Privacy::Trait::Protected;
+BEGIN {
+  $MooseX::Privacy::Trait::Protected::VERSION = '0.02';
+}
 
 use Moose::Role;
 with 'MooseX::Privacy::Trait::Role' => {name => 'Protected'};
@@ -6,26 +9,26 @@ with 'MooseX::Privacy::Trait::Role' => {name => 'Protected'};
 1;
 
 __END__
+=pod
 
 =head1 NAME
 
-MooseX::Privacy::Trait::Protected;
+MooseX::Privacy::Trait::Protected
 
-=head1 SYNOPSIS
+=head1 VERSION
 
-=head1 METHODS
+version 0.02
 
 =head1 AUTHOR
 
-franck cuny E<lt>franck@lumberjaph.netE<gt>
+  franck cuny <franck@lumberjaph.net>
 
-=head1 SEE ALSO
+=head1 COPYRIGHT AND LICENSE
 
-=head1 LICENSE
+This software is copyright (c) 2010 by franck cuny.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
-
 

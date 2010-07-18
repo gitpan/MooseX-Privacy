@@ -1,5 +1,7 @@
 package MooseX::Privacy;
 
+# ABSTRACT: Provides the syntax to restrict/control visibility of your methods
+
 our $VERSION = '0.01';
 
 use Moose::Exporter;
@@ -30,11 +32,17 @@ sub init_meta {
 }
 
 1;
-__END__
+
+
+=pod
 
 =head1 NAME
 
 MooseX::Privacy - Provides the syntax to restrict/control visibility of your methods
+
+=head1 VERSION
+
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -123,13 +131,17 @@ When the B<Protected> traits is applied to an attribute, this attribute can only
 
 =head1 AUTHOR
 
-franck cuny E<lt>franck@lumberjaph.netE<gt>
+  franck cuny <franck@lumberjaph.net>
 
-=head1 SEE ALSO
+=head1 COPYRIGHT AND LICENSE
 
-=head1 LICENSE
+This software is copyright (c) 2010 by franck cuny.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

@@ -1,46 +1,42 @@
 package MooseX::Privacy::Meta::Attribute::Private;
+BEGIN {
+  $MooseX::Privacy::Meta::Attribute::Private::VERSION = '0.02';
+}
 
 use Moose::Role;
 use Carp qw/confess/;
 
-sub _generate_accessor_method {
-    my $self = shift;
-    my $attr = $self->associated_attribute;
+with 'MooseX::Privacy::Meta::Attribute::Privacy' => {level => 'private'};
 
-    my $package_name = $attr->associated_class->name;
-    my $class = $attr->associated_class->name->meta;
-    if ( $class->meta->has_attribute('local_private_attributes') ) {
-        $class->_push_private_attribute( $attr->name );
-    }
-
-    return sub {
-        my $self   = shift;
-        my $caller = ( scalar caller() );
-        confess "Attribute " . $attr->name . " is private"
-            unless $caller eq $package_name;
-        $attr->set_value( $self, $_[0] ) if scalar @_;;
-        $attr->get_value($self);
-    };
+sub _check_private {
+    my ($meta, $caller, $attr_name, $package_name) = @_;
+    confess "Attribute " . $attr_name . " is private"
+        unless $caller eq $package_name;
 }
 
 1;
+
 __END__
+=pod
 
 =head1 NAME
 
 MooseX::Privacy::Meta::Attribute::Private
 
-=head1 SYNOPSIS
+=head1 VERSION
+
+version 0.02
 
 =head1 AUTHOR
 
-franck cuny E<lt>franck@lumberjaph.netE<gt>
+  franck cuny <franck@lumberjaph.net>
 
-=head1 SEE ALSO
+=head1 COPYRIGHT AND LICENSE
 
-=head1 LICENSE
+This software is copyright (c) 2010 by franck cuny.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+

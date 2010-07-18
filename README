@@ -2,6 +2,9 @@ NAME
     MooseX::Privacy - Provides the syntax to restrict/control visibility of
     your methods
 
+VERSION
+    version 0.02
+
 SYNOPSIS
         use MooseX::Privacy;
 
@@ -84,10 +87,11 @@ METHODS
     only be read or set within the class AND any of his subclasses.
 
 AUTHOR
-    franck cuny <franck@lumberjaph.net>
+      franck cuny <franck@lumberjaph.net>
 
-SEE ALSO
-LICENSE
-    This library is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by franck cuny.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
