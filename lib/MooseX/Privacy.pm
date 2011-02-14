@@ -26,8 +26,8 @@ sub init_meta {
     Moose->init_meta(%options);
 
     Moose::Util::MetaRole::apply_metaroles(
-        for_class       => $for,
-        metaclass_roles => [ 'MooseX::Privacy::Meta::Class', ],
+        for             => $for,
+        class_metaroles => { class => [ 'MooseX::Privacy::Meta::Class', ] },
     );
 }
 
@@ -42,7 +42,7 @@ MooseX::Privacy - Provides the syntax to restrict/control visibility of your met
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -131,7 +131,7 @@ When the B<Protected> traits is applied to an attribute, this attribute can only
 
 =head1 AUTHOR
 
-  franck cuny <franck@lumberjaph.net>
+franck cuny <franck@lumberjaph.net>
 
 =head1 COPYRIGHT AND LICENSE
 

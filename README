@@ -3,7 +3,7 @@ NAME
     your methods
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
         use MooseX::Privacy;
@@ -87,7 +87,7 @@ METHODS
     only be read or set within the class AND any of his subclasses.
 
 AUTHOR
-      franck cuny <franck@lumberjaph.net>
+    franck cuny <franck@lumberjaph.net>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2010 by franck cuny.

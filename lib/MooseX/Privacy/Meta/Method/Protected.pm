@@ -1,6 +1,6 @@
 package MooseX::Privacy::Meta::Method::Protected;
 BEGIN {
-  $MooseX::Privacy::Meta::Method::Protected::VERSION = '0.02';
+  $MooseX::Privacy::Meta::Method::Protected::VERSION = '0.03';
 }
 
 use Moose;
@@ -39,11 +39,11 @@ MooseX::Privacy::Meta::Method::Protected
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
-  franck cuny <franck@lumberjaph.net>
+franck cuny <franck@lumberjaph.net>
 
 =head1 COPYRIGHT AND LICENSE
 

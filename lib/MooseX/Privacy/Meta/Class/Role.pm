@@ -1,6 +1,6 @@
 package MooseX::Privacy::Meta::Class::Role;
 BEGIN {
-  $MooseX::Privacy::Meta::Class::Role::VERSION = '0.02';
+  $MooseX::Privacy::Meta::Class::Role::VERSION = '0.03';
 }
 
 # ABSTRACT: Private and Protected parameterized roles
@@ -82,11 +82,11 @@ MooseX::Privacy::Meta::Class::Role - Private and Protected parameterized roles
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
-  franck cuny <franck@lumberjaph.net>
+franck cuny <franck@lumberjaph.net>
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -1,6 +1,6 @@
 package MooseX::Privacy::Meta::Class;
 BEGIN {
-  $MooseX::Privacy::Meta::Class::VERSION = '0.02';
+  $MooseX::Privacy::Meta::Class::VERSION = '0.03';
 }
 
 #ABSTRACT: Meta Class for your privacy
@@ -15,13 +15,13 @@ with(
 
 package Moose::Meta::Attribute::Custom::Trait::Private;
 BEGIN {
-  $Moose::Meta::Attribute::Custom::Trait::Private::VERSION = '0.02';
+  $Moose::Meta::Attribute::Custom::Trait::Private::VERSION = '0.03';
 }
 sub register_implementation {'MooseX::Privacy::Trait::Private'}
 
 package Moose::Meta::Attribute::Custom::Trait::Protected;
 BEGIN {
-  $Moose::Meta::Attribute::Custom::Trait::Protected::VERSION = '0.02';
+  $Moose::Meta::Attribute::Custom::Trait::Protected::VERSION = '0.03';
 }
 sub register_implementation {'MooseX::Privacy::Trait::Protected'}
 
@@ -37,7 +37,7 @@ MooseX::Privacy::Meta::Class - Meta Class for your privacy
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 METHODS
 
@@ -101,7 +101,7 @@ or
 
 =head1 AUTHOR
 
-  franck cuny <franck@lumberjaph.net>
+franck cuny <franck@lumberjaph.net>
 
 =head1 COPYRIGHT AND LICENSE
 
