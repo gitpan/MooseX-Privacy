@@ -42,7 +42,7 @@ MooseX::Privacy - Provides the syntax to restrict/control visibility of your met
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 

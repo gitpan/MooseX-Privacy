@@ -1,6 +1,6 @@
 package MooseX::Privacy::Trait::Role;
 BEGIN {
-  $MooseX::Privacy::Trait::Role::VERSION = '0.03';
+  $MooseX::Privacy::Trait::Role::VERSION = '0.04';
 }
 
 use MooseX::Role::Parameterized;
@@ -33,7 +33,7 @@ MooseX::Privacy::Trait::Role
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package MooseX::Privacy::Meta::Attribute::Private;
 BEGIN {
-  $MooseX::Privacy::Meta::Attribute::Private::VERSION = '0.03';
+  $MooseX::Privacy::Meta::Attribute::Private::VERSION = '0.04';
 }
 
 use Moose::Role;
@@ -25,7 +25,7 @@ MooseX::Privacy::Meta::Attribute::Private
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 

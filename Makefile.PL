@@ -12,7 +12,6 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Provides the syntax to restrict/control visibility of your methods',
   'AUTHOR' => 'franck cuny <franck@lumberjaph.net>',
   'BUILD_REQUIRES' => {
-    'Foo' => '0',
     'Test::Exception' => '0',
     'Test::Moose' => '0',
     'Test::More' => '0'
@@ -26,16 +25,12 @@ my %WriteMakefileArgs = (
   'NAME' => 'MooseX::Privacy',
   'PREREQ_PM' => {
     'Carp' => '0',
-    'Moose' => '0',
-    'Moose::Exporter' => '0',
-    'Moose::Meta::Class' => '0',
-    'Moose::Meta::Method' => '0',
-    'Moose::Role' => '0',
+    'Moose' => '0.94',
     'MooseX::Role::Parameterized' => '0',
     'MooseX::Types::Moose' => '0',
     'Scalar::Util' => '0'
   },
-  'VERSION' => '0.03',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }
