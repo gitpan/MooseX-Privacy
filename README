@@ -3,7 +3,7 @@ NAME
     your methods
 
 VERSION
-    version 0.04
+    version 0.05
 
 SYNOPSIS
         use MooseX::Privacy;

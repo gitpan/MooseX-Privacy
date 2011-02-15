@@ -1,8 +1,9 @@
 package MooseX::Privacy;
+BEGIN {
+  $MooseX::Privacy::VERSION = '0.05';
+}
 
 # ABSTRACT: Provides the syntax to restrict/control visibility of your methods
-
-our $VERSION = '0.01';
 
 use Moose::Exporter;
 
@@ -42,7 +43,7 @@ MooseX::Privacy - Provides the syntax to restrict/control visibility of your met
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

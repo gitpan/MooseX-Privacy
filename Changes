@@ -1,5 +1,8 @@
 Revision history for Perl extension MooseX::Privacy
 
+0.05    Tue 15 Feb 2011 10:06:56 AM CET
+        - insert correct version number
+
 0.04    Mon Feb 14 22:35:24 2011
         - fix broken Makefile
 

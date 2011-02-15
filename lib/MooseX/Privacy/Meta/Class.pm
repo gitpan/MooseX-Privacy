@@ -1,6 +1,6 @@
 package MooseX::Privacy::Meta::Class;
 BEGIN {
-  $MooseX::Privacy::Meta::Class::VERSION = '0.04';
+  $MooseX::Privacy::Meta::Class::VERSION = '0.05';
 }
 
 #ABSTRACT: Meta Class for your privacy
@@ -15,13 +15,13 @@ with(
 
 package Moose::Meta::Attribute::Custom::Trait::Private;
 BEGIN {
-  $Moose::Meta::Attribute::Custom::Trait::Private::VERSION = '0.04';
+  $Moose::Meta::Attribute::Custom::Trait::Private::VERSION = '0.05';
 }
 sub register_implementation {'MooseX::Privacy::Trait::Private'}
 
 package Moose::Meta::Attribute::Custom::Trait::Protected;
 BEGIN {
-  $Moose::Meta::Attribute::Custom::Trait::Protected::VERSION = '0.04';
+  $Moose::Meta::Attribute::Custom::Trait::Protected::VERSION = '0.05';
 }
 sub register_implementation {'MooseX::Privacy::Trait::Protected'}
 
@@ -37,7 +37,7 @@ MooseX::Privacy::Meta::Class - Meta Class for your privacy
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 METHODS
 
